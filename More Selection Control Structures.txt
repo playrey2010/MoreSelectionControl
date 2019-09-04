@@ -49,7 +49,7 @@ case 2: tax = 0.05;
 case 3: tax = 0.07;
 
 Calculate the sales_tax:
-sales_tax = (purchase_amount * tax); 
+sales_tax = (purchase_amount * (1 + tax); 
 
 Calculate the total amount
 total = purchase_amount + sales_tax;
@@ -73,10 +73,10 @@ if ((hours >= 0)&& (hours <=60) {
 validHours == true}
 else {display hours and errorMessage1;}
 
-
-if ((payRate >= 0)&& (payRate <=25.00) {
-validPayRate == true}
-else {display payRate and errorMessage2;}
+encapsulate in do-while with expression (while validPayRate != true)
+		if ((payRate >= 0)&& (payRate <=25.00) {
+		validPayRate == true}
+		else {display payRate and errorMessage2;}
 
 Weekly pay calculation:
 overtimeRate = payRate * 1.5;
