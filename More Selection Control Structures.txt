@@ -28,7 +28,7 @@ Output - display customer_name, purchase_amount, sales_tax, total
 ACTUAL PSEUDOCODE: 
 Declare String customerName;
 Declare double purchase_amount;
-Declare double tax;
+Declare int tax;
 Declare double sales_tax;
 Declare double total;
 
@@ -49,7 +49,7 @@ case 2: tax = 0.05;
 case 3: tax = 0.07;
 
 Calculate the sales_tax:
-sales_tax = (purchase_amount * (1 + tax); 
+sales_tax = (purchase_amount * (tax); 
 
 Calculate the total amount
 total = purchase_amount + sales_tax;
