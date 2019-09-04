@@ -1,0 +1,113 @@
+// Create IPO
+// Mention control structure required
+// show check of solution with test data for at least two valid test cases
+
+PROBLEM #1: 
+
+Control Structures: sequence, selection; 
+
+Input - 
+customer_name
+purchase_amount
+Type of tax code (switch statement)
+
+Process - 
+switch(taxCode):
+case 0: tax = 0.00;
+case 1: tax = 0.03;
+case 2: tax = 0.05;
+case 3: tax = 0.07;
+
+sales_tax = (purchase_amount * tax); 
+total = purchase_amount + sales_tax
+
+
+Output - display customer_name, purchase_amount, sales_tax, total
+
+
+ACTUAL PSEUDOCODE: 
+Declare String customerName;
+Declare double purchase_amount;
+Declare double tax;
+Declare double sales_tax;
+Declare double total;
+
+Prompt user for purchase_amount;
+Get purchase_amount;
+
+Prompt user for customerName;
+Get customerName;
+
+Prompt user for taxCode;
+Get taxCode;
+
+Define tax percentage for customer: 
+switch(taxCode):
+case 0: tax = 0.00;
+case 1: tax = 0.03;
+case 2: tax = 0.05;
+case 3: tax = 0.07;
+
+Calculate the sales_tax:
+sales_tax = (purchase_amount * tax); 
+
+Calculate the total amount
+total = purchase_amount + sales_tax;
+
+Display customerName, purchase_amount, sales_tax, total 
+
+
+
+
+
+
+PROBLEM #2: 
+
+Control Structures: sequence, selection(if, else), repetition (while, in validation); 
+
+Input - employeeNumber, payRate, hours
+
+Process - 
+Validation: 
+if ((hours >= 0)&& (hours <=60) {
+validHours == true}
+else {display hours and errorMessage1;}
+
+
+if ((payRate >= 0)&& (payRate <=25.00) {
+validPayRate == true}
+else {display payRate and errorMessage2;}
+
+Weekly pay calculation:
+overtimeRate = payRate * 1.5;
+overtimeHours = hours - 35;
+if (hours > 35) {
+weeklyPay = (hours * payRate) + (overtimeHours * overtimeRate);
+} else {
+weeklyPay = (hours * payRate);}
+
+Output - if validHours && validPayRate, display weeklyPay and all input Data
+
+Pseudocode:
+Declare integer employeeNumber;
+Declare double payRate;
+Declare int hours;
+Declare boolean validHours = false;
+Declare boolean validPayRate = false;
+declare double overtimeRate;
+declare int overtimeHours;
+declare String errorMessage1;
+declare String errorMessage2;
+declare double weeklyPay;
+
+
+Prompt user for employeeNumber, payRate, hours
+get employeeNumber, payRate, hours
+
+Validate payRate and hours (see process)
+if validHours && validPayRate: display weeklyPay;
+else {display corresponding error message}
+
+
+
+
